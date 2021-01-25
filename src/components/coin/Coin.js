@@ -1,11 +1,10 @@
 import React from 'react';
 import './Coin.css';
 
-
 const Coin = (props) => {
   return (
     <div className='coin-container'>
-      <button className='coin-row'>
+      <button className='coin-row' onClick={props.handleCoinOnChange}>
         <div className='coin'>
           <img src={props.image} alt='crypto' />
           <h1>{props.name}</h1>
